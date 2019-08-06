@@ -1,14 +1,87 @@
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; }
+body {
+  margin: 0; }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+.header {
+  -webkit-box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+          box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 87px 0 81px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header__navigation button {
+      display: block;
+      width: 80px;
+      height: 40px;
+      border: 1px solid #e0e0e0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 13px;
+      padding: 0;
+      cursor: pointer; }
+
+.navigation {
+  margin-right: 92px; }
+  .navigation input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    height: 40px; }
+    .navigation input::-webkit-input-placeholder {
+      font-size: 16px;
+      color: #1d1d1d; }
+    .navigation input::-moz-placeholder {
+      font-size: 16px;
+      color: #1d1d1d; }
+    .navigation input:-ms-input-placeholder {
+      font-size: 16px;
+      color: #1d1d1d; }
+    .navigation input::-ms-input-placeholder {
+      font-size: 16px;
+      color: #1d1d1d; }
+    .navigation input::placeholder {
+      font-size: 16px;
+      color: #1d1d1d; }
+  .navigation__time {
+    width: 65px;
+    text-align: center; }
+  .navigation__divider {
+    font-size: 16px;
+    font-weight: 300;
+    color: #626262; }
+  .navigation__address {
+    width: 292px;
+    padding-left: 36px;
+    background: url("../../images/location.png") no-repeat 12px; }
+  .navigation__sign-in {
+    background-color: #fff;
+    margin-right: 16px; }
+  .navigation__registration {
+    background-color: #262626;
+    color: #fff;
+    margin-right: 16px; }
+
+.main {
+  padding: 32px 87px 0 81px; }
 
 body {
-  background: #eee; }
+  font-family: "Roboto", sans-serif;
+  color: #1d1d1d; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Uber Eats</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/css/main.css" />
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <a href="#">
+        <img src="./images/logo.png" alt="UberEats logo" class="header__logo" />
+      </a>
+
+      <div class="header__navigation">
+        <div class="navigation">
+          <input type="text" class="navigation__time" placeholder="ASAP" />
+
+          <span class="navigation__divider">to</span>
+
+          <input
+            type="text"
+            class="navigation__address"
+            placeholder="ul.Tarasivska St, 16"
+          />
+        </div>
+
+        <button class="navigation__sign-in">Sign In</button>
+        <button class="navigation__registration">Register</button>
+
+        <a href="#" class="navigation__basket">
+          <img src="./images/basket.png" alt="Basket" class="navigation__basket--img"/>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="search">
+        
+      </div>
+    </main>
+
+    <footer class="footer"></footer>
   </body>
 </html>

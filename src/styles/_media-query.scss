@@ -1,0 +1,98 @@
+@media (max-width: 1023px) {
+  .header,
+  .main,
+  .footer {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .navigation {
+    input::placeholder {
+      font-size: 13px;
+    }
+
+    &__time {
+      width: 65px;
+    }
+
+    &__address {
+      width: 215px;
+    }
+  }
+
+  .restaurants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__bottom {
+    &--copyright {
+      margin-right: 106px;
+    }
+
+    &--privacy {
+      margin-right: 220px;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .header,
+  .main,
+  .footer {
+    padding-right: 4px;
+  }
+
+  .header__logo {
+    width: 109px;
+  }
+
+  .header__navigation {
+    & button {
+      width: 72px;
+    }
+  }
+
+  .navigation {
+    display: none;
+
+    &__basket {
+      display: none;
+    }
+
+    &__sign-in {
+      margin-right: 12px;
+      margin-left: 46px;
+    }
+
+    &__registration {
+      margin-right: 0;
+    }
+  }
+
+  .restaurants {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__body {
+    display: block;
+    padding-bottom: 12px;
+  }
+
+  .footer__social {
+    margin-bottom: 42px;
+  }
+
+  .footer__bottom {
+    display: block;
+
+    & a {
+      display: block;
+      margin-top: 24px;
+    }
+  }
+
+  .button-go-top {
+    width: 64px;
+    height: 64px;
+  }
+}

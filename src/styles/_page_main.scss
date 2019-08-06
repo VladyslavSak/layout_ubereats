@@ -1,0 +1,69 @@
+.main {
+  padding: 32px 87px 100px 81px;
+
+  &__title {
+    margin: 56px 0 16px;
+    font-size: 22px;
+    font-weight: normal;
+  }
+}
+
+.search {
+  &__field {
+    display: block;
+    padding: 8px 0 15px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    border: 0;
+    border-bottom: 1px solid #757575;
+    background: url("../images/search.png") no-repeat 0 8px;
+
+    &::placeholder {
+      font-size: 16px;
+      color: #626262;
+    }
+
+    &:focus {
+      outline-color: #626262;
+    }
+  }
+}
+
+.restaurants {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 36px 12px;
+}
+
+.card {
+  &__img {
+    width: 100%;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  span {
+    display: block;
+    margin-top: 4px;
+  }
+
+  &__kitchen {
+    font-size: 14px;
+    color: #626262;
+  }
+
+  &__time-cooking {
+    font-size: 13px;
+  }
+}
