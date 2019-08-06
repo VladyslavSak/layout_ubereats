@@ -1,7 +1,11 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "reset";
+@import "variables";
+@import "page_header";
+@import "page_main";
+@import "page_footer";
+@import "media-query";
 
 body {
-  background: $c-gray;
+  font-family: "Roboto", sans-serif;
+  color: $main-color;
 }
