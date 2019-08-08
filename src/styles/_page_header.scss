@@ -1,5 +1,9 @@
 @import "variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
   height: 72px;
@@ -7,6 +11,7 @@
   padding: 0 87px 0 81px;
   justify-content: space-between;
   align-items: center;
+  
 
   &__navigation {
     display: flex;
@@ -14,20 +19,15 @@
 
     & button {
       display: block;
+      font-family: "Roboto", sans-serif;
       width: 80px;
       height: 40px;
-      border: 1px solid #e0e0e0;
       box-sizing: border-box;
       border-radius: 2px;
       font-weight: 500;
       font-size: 13px;
       padding: 0;
       cursor: pointer;
-
-      &:hover {
-        background-color: #262626;
-        color: #fff;
-      }
     }
   }
 }
@@ -40,6 +40,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 2px;
     height: 40px;
+    font-size: 16px;
 
     &:focus {
       outline-color: $secondary-text-color;
@@ -47,7 +48,7 @@
 
     &::placeholder {
       font-size: 16px;
-      color: $main-color;
+      color: #626262;
     }
   }
 
@@ -69,13 +70,21 @@
   }
 
   &__sign-in {
-    background-color: #fff;
+    border: 1px solid #e0e0e0;
     margin-right: 16px;
+    background: #fff;
+    color: #1d1d1d;
+    font-weight: 500;
+
+    &:hover {
+      color: $secondary-color;
+    }
   }
 
   &__registration {
     margin-right: 16px;
-    color: #000;
-    background-color: #fff;
+    background: #262626;
+    color: #fff;
+    border: 0;
   }
 }

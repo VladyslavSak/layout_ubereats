@@ -7,8 +7,12 @@
   }
 
   .navigation {
-    input::placeholder {
+    & input {
       font-size: 13px;
+
+      &::placeholder {
+        font-size: 13px;
+      }
     }
 
     &__time {
@@ -31,6 +35,65 @@
 
     &--privacy {
       margin-right: 220px;
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .navigation {
+    margin-right: 40px;
+
+    &__address {
+      width: 170px;
+    }
+  }
+}
+
+@media (max-width: 674px) {
+  .navigation {
+    display: none;
+  }
+
+  .order__info {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+    & .name {
+      color: #626262;
+      font-size: 11px;
+      line-height: 13px;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      & .field {
+        margin-top: 8px;
+        display: block;
+        border: 1px solid #e0e0e0;
+        box-sizing: border-box;
+        border-radius: 2px;
+        height: 40px;
+
+        &::placeholder {
+          font-family: "Roboto", sans-serif;
+          font-size: 13px;
+          line-height: 24px;
+          color: #1d1d1d;
+        }
+
+        &.time__field {
+          width: 67px;
+          padding: 8px 16px;
+        }
+
+        &.address__field {
+          width: 227px;
+          padding: 8px 0 8px 35px;
+          background: url("../images/location.png") no-repeat 11px 12px;
+        }
+      }
     }
   }
 }
