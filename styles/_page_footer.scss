@@ -41,7 +41,7 @@
       color: #fff;
       margin: 33px 0 22px;
 
-      & i {
+      & span {
         font-style: normal;
         color: $secondary-color;
       }
@@ -183,6 +183,8 @@
   position: absolute;
   bottom: 24px;
   right: 16px;
+  scroll-behavior: smooth;
+  cursor: pointer;
 
   &:hover {
     background: url("../images/arrow.png") no-repeat 50%, green;

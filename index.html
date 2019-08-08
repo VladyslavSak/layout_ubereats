@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <a href="#">
         <img src="./images/logo.png" alt="UberEats logo" class="header__logo" />
       </a>
 
       <div class="header__navigation">
-        <div class="navigation">
+        <div class="navigation" id="nav">
           <input type="text" class="navigation__time" placeholder="ASAP" />
 
           <span class="navigation__divider">to</span>
@@ -50,6 +50,19 @@
           class="search__field"
           placeholder="Search for restaurant or cuisine"
         />
+      </div>
+
+      <div class="order__info">
+        <label for="time" class="name time">
+          When
+          <input type="text" name="time" id="time" class="field time__field" placeholder="ASAP">
+        </label>
+
+        <label for="address" class="name address">
+          To
+          <input type="text" class="field address__field"
+          id="address" name="address" placeholder="ul. Bolshaya Dmitrovka,22">
+        </label>
       </div>
 
       <h1 class="main__title">Kyiv Restaurants</h1>
@@ -254,13 +267,13 @@
       </div>
 
       <div class="footer__body--apps apps">
-          <a href="#" class="apps__link">
-            <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt="AppleStore Download" class="apps__img">
-          </a>
-          <a href="#" class="apps__link">
-            <img src="./images/en_badge_web_generic-cf6dad406f.png" alt="Play market download" class="apps__img">
-          </a>
-        </div>
+        <a href="#" class="apps__link">
+          <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt="AppleStore Download" class="apps__img">
+        </a>
+        <a href="#" class="apps__link">
+          <img src="./images/en_badge_web_generic-cf6dad406f.png" alt="Play market download" class="apps__img">
+        </a>
+      </div>
 
       <div class="footer__bottom">
         <p class="footer__bottom--copyright">©    2019 Uber Technologies Inc.
@@ -270,7 +283,7 @@
 
         <a href="#" class="footer__bottom--terms license">Terms</a>
       </div>
-      <a href="#" class="button-go-top"></a>
+      <a href="#header" class="button-go-top"></a>
     </footer>
   </body>
 </html>
