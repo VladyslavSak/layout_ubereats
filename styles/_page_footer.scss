@@ -36,7 +36,7 @@
       bottom: 0;
     }
 
-    &__hashtag {
+    &--hashtag {
       display: block;
       color: #fff;
       margin: 33px 0 22px;
@@ -82,7 +82,7 @@
   }
 
   &__menu {
-    &__item {
+    &-item {
       display: block;
       text-decoration: none;
       color: #fff;
