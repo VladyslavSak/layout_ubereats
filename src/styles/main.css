@@ -87,7 +87,7 @@ html {
 
 .navigation__time {
   width: 65px;
-  text-align: center;
+  padding-left: 12px;
 }
 
 .navigation__divider {
@@ -144,7 +144,7 @@ html {
   height: 48px;
   border: 0;
   border-bottom: 1px solid #757575;
-  background: url("../images/search.png") no-repeat 0 10px;
+  background: url("../images/search.png") no-repeat 3px 13px;
   font-size: 16px;
 }
 
@@ -254,13 +254,13 @@ html {
   bottom: 0;
 }
 
-.footer__body__hashtag {
+.footer__body--hashtag {
   display: block;
   color: #fff;
   margin: 33px 0 22px;
 }
 
-.footer__body__hashtag span {
+.footer__body--hashtag span {
   font-style: normal;
   color: #49a144;
 }
@@ -308,35 +308,35 @@ html {
   display: flex;
 }
 
-.footer__menu__item {
+.footer__menu-item {
   display: block;
   text-decoration: none;
   color: #fff;
   margin-bottom: 23px;
 }
 
-.footer__menu__item.item_row_2 {
+.footer__menu-item.item_row_2 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 2;
       grid-row-start: 2;
 }
 
-.footer__menu__item.item_row_3 {
+.footer__menu-item.item_row_3 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 3;
       grid-row-start: 3;
 }
 
-.footer__menu__item:last-child {
+.footer__menu-item:last-child {
   -ms-grid-column: 3;
       grid-column-start: 3;
   -ms-grid-row: 4;
       grid-row-start: 4;
 }
 
-.footer__menu__item:hover {
+.footer__menu-item:hover {
   color: #49a144;
 }
 
@@ -473,66 +473,10 @@ html {
 
 @media (max-width: 674px) {
   .navigation {
-    display: none;
+    margin-right: 20px;
   }
-  .order__info {
-    margin-top: 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .order__info .name {
-    color: #626262;
-    font-size: 11px;
-    line-height: 13px;
-  }
-  .order__info .name:not(:last-child) {
-    margin-right: 16px;
-  }
-  .order__info .name .field {
-    margin-top: 8px;
-    display: block;
-    border: 1px solid #e0e0e0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 2px;
-    height: 40px;
-  }
-  .order__info .name .field::-webkit-input-placeholder {
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    color: #1d1d1d;
-  }
-  .order__info .name .field:-ms-input-placeholder {
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    color: #1d1d1d;
-  }
-  .order__info .name .field::-ms-input-placeholder {
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    color: #1d1d1d;
-  }
-  .order__info .name .field::placeholder {
-    font-family: "Roboto", sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    color: #1d1d1d;
-  }
-  .order__info .name .field.time__field {
-    width: 67px;
-    padding: 8px 16px;
-  }
-  .order__info .name .field.address__field {
-    width: 227px;
-    padding: 8px 0 8px 35px;
-    background: url("../images/location.png") no-repeat 11px 12px;
+  .navigation__address {
+    width: 160px;
   }
 }
 
@@ -561,6 +505,67 @@ html {
   .navigation__registration {
     margin-right: 0;
   }
+  .search__field {
+    background-position: 7px 15px;
+    background-size: 16px 16px;
+  }
+  .order__info {
+    margin-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .order__info .order__info--title {
+    color: #626262;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .order__info .order__info--title:not(:last-child) {
+    margin-right: 16px;
+  }
+  .order__info .order__info--title .field {
+    margin-top: 8px;
+    display: block;
+    border: 1px solid #e0e0e0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 2px;
+    height: 40px;
+  }
+  .order__info .order__info--title .field::-webkit-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #1d1d1d;
+  }
+  .order__info .order__info--title .field:-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #1d1d1d;
+  }
+  .order__info .order__info--title .field::-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #1d1d1d;
+  }
+  .order__info .order__info--title .field::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #1d1d1d;
+  }
+  .order__info .order__info--title .field.time__field {
+    width: 20vw;
+    padding: 8px 12px;
+  }
+  .order__info .order__info--title .field.address__field {
+    width: 70vw;
+    padding: 8px 0 8px 35px;
+    background: url("../images/location.png") no-repeat 11px 12px;
+  }
   .restaurants {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
@@ -568,6 +573,9 @@ html {
   .footer__body {
     display: block;
     padding-bottom: 12px;
+  }
+  .footer__language {
+    margin-bottom: 15px;
   }
   .footer__social {
     margin-bottom: 42px;
