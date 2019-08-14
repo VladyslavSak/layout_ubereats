@@ -131,7 +131,7 @@ html {
   font-weight: normal;
 }
 
-.order__info {
+.order {
   display: none;
 }
 
@@ -182,12 +182,12 @@ html {
   grid-gap: 36px 12px;
 }
 
-.card__img {
+.card__link--img {
   width: 100%;
   opacity: 0.8;
 }
 
-.card__img:hover {
+.card__link--img:hover {
   opacity: 1;
 }
 
@@ -265,7 +265,7 @@ html {
   color: #49a144;
 }
 
-.footer__body--apps {
+.footer__apps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +302,7 @@ html {
   opacity: 0.3;
 }
 
-.footer__website {
+.footer__websites {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,14 +315,14 @@ html {
   margin-bottom: 23px;
 }
 
-.footer__menu-item.item_row_2 {
+.footer__menu-item.item_row-start-2 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 2;
       grid-row-start: 2;
 }
 
-.footer__menu-item.item_row_3 {
+.footer__menu-item.item_row-start-3 {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 3;
@@ -378,7 +378,7 @@ html {
   color: #49a144;
 }
 
-.website a {
+.websites a {
   display: block;
   width: 24px;
   height: 24px;
@@ -387,19 +387,19 @@ html {
           box-sizing: border-box;
 }
 
-.website a:hover {
+.websites a:hover {
   border: 1px solid #fff;
 }
 
-.website-fc {
+.websites-fc {
   background: url("../images/facebook.png") no-repeat 50%;
 }
 
-.website-tw {
+.websites-tw {
   background: url("../images/twitter.png") no-repeat 50%;
 }
 
-.website-inst {
+.websites-inst {
   background: url("../images/instagram.png") no-repeat 50%;
 }
 
@@ -416,6 +416,8 @@ html {
   right: 16px;
   scroll-behavior: smooth;
   cursor: pointer;
+  -webkit-transition: 0.5s background ease;
+  transition: 0.5s background ease;
 }
 
 .button-go-top:hover {
@@ -509,22 +511,22 @@ html {
     background-position: 7px 15px;
     background-size: 16px 16px;
   }
-  .order__info {
+  .order {
     margin-top: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
-  .order__info .order__info--title {
+  .order .order__title {
     color: #626262;
     font-size: 11px;
     line-height: 13px;
   }
-  .order__info .order__info--title:not(:last-child) {
+  .order .order__title:not(:last-child) {
     margin-right: 16px;
   }
-  .order__info .order__info--title .field {
+  .order .order__title .order__field {
     margin-top: 8px;
     display: block;
     border: 1px solid #e0e0e0;
@@ -533,35 +535,35 @@ html {
     border-radius: 2px;
     height: 40px;
   }
-  .order__info .order__info--title .field::-webkit-input-placeholder {
+  .order .order__title .order__field::-webkit-input-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #1d1d1d;
   }
-  .order__info .order__info--title .field:-ms-input-placeholder {
+  .order .order__title .order__field:-ms-input-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #1d1d1d;
   }
-  .order__info .order__info--title .field::-ms-input-placeholder {
+  .order .order__title .order__field::-ms-input-placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #1d1d1d;
   }
-  .order__info .order__info--title .field::placeholder {
+  .order .order__title .order__field::placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #1d1d1d;
   }
-  .order__info .order__info--title .field.time__field {
+  .order .order__title .order__field.order__time--field {
     width: 20vw;
     padding: 8px 12px;
   }
-  .order__info .order__info--title .field.address__field {
+  .order .order__title .order__field.order__address--field {
     width: 70vw;
     padding: 8px 0 8px 35px;
     background: url("../images/location.png") no-repeat 11px 12px;

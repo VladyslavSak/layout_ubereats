@@ -8,7 +8,7 @@
   }
 }
 
-.order__info {
+.order {
   display: none;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .card {
-  &__img {
+  &__link--img {
     width: 100%;
     opacity: 0.8;
 

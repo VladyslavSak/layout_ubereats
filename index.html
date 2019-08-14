@@ -18,7 +18,7 @@
       </a>
 
       <div class="header__navigation">
-        <div class="navigation" id="nav">
+        <div class="navigation">
           <input type="text" class="navigation__time" placeholder="ASAP" />
 
           <span class="navigation__divider">to</span>
@@ -43,7 +43,7 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
       <div class="search">
         <input
           type="text"
@@ -52,16 +52,27 @@
         />
       </div>
 
-      <div class="order__info">
-        <label for="time" class="order__info--title time">
+      <div class="order">
+        <label for="time" class="order__title order__time">
           When
-          <input type="text" name="time" id="time" class="field time__field" placeholder="ASAP">
+          <input
+            type="text"
+            name="time"
+            id="time"
+            class="order__field order__time--field"
+            placeholder="ASAP"
+          />
         </label>
 
-        <label for="address" class="order__info--title address">
+        <label for="address" class="order__title order__address">
           To
-          <input type="text" class="field address__field"
-          id="address" name="address" placeholder="ul. Bolshaya Dmitrovka,22">
+          <input
+            type="text"
+            class="order__field order__address--field"
+            id="address"
+            name="address"
+            placeholder="ul. Bolshaya Dmitrovka,22"
+          />
         </label>
       </div>
 
@@ -70,7 +81,11 @@
       <div class="restaurants">
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo-5.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo-5.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -86,7 +101,11 @@
 
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo-1.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo-1.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -102,7 +121,11 @@
 
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -118,7 +141,11 @@
 
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo-2.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo-2.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -134,7 +161,11 @@
 
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo-3.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo-3.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -150,7 +181,11 @@
 
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo-4.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo-4.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -166,7 +201,11 @@
 
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo-8.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo-8.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -182,7 +221,11 @@
 
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo-6.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo-6.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -198,7 +241,11 @@
 
         <div class="restaurants__item card">
           <a href="#" class="card__link">
-            <img src="./images/photo-7.png" alt="restaurant photo" class="card__img">
+            <img
+              src="./images/photo-7.png"
+              alt="restaurant photo"
+              class="card__link--img"
+            />
           </a>
 
           <h2 class="card__title">
@@ -214,10 +261,10 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__top">
         <a href="#" class="footer__top--link">
-          <img src="./images/white-logo.png" alt="Logo of UberEats">
+          <img src="./images/white-logo.png" alt="Logo of UberEats" />
         </a>
       </div>
       <div class="footer__body">
@@ -236,7 +283,7 @@
 
           <span class="footer__body--hashtag"><span>#</span>UberEats</span>
 
-          <div class="footer__website website">
+          <div class="footer__websites websites">
             <a href="#" class="website-fc"></a>
             <a href="#" class="website-tw"></a>
             <a href="#" class="website-inst"></a>
@@ -246,10 +293,10 @@
         <a href="#" class="footer__menu-item">
           About UberEats
         </a>
-        <a href="#" class="footer__menu-item item_row_2">
+        <a href="#" class="footer__menu-item item_row-start-2">
           Become a Delivery Partner
         </a>
-        <a href="#" class="footer__menu-item item_row_3">
+        <a href="#" class="footer__menu-item item_row-start-3">
           Become a Restaurant Partner
         </a>
         <a href="#" class="footer__menu-item">
@@ -266,18 +313,20 @@
         </a>
       </div>
 
-      <div class="footer__body--apps apps">
+      <div class="footer__apps apps">
         <a href="#" class="apps__link">
           <img
             src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png"
             alt="AppleStore Download"
-            class="apps__img">
+            class="apps__img"
+          />
         </a>
         <a href="#" class="apps__link">
           <img
             src="./images/en_badge_web_generic-cf6dad406f.png"
             alt="Play market download"
-            class="apps__img">
+            class="apps__img"
+          />
         </a>
       </div>
 
