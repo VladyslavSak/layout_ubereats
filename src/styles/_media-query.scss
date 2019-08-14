@@ -98,12 +98,12 @@
     background-size: 16px 16px;
   }
 
-  .order__info {
+  .order {
     margin-top: 24px;
     display: flex;
     width: 100%;
 
-    & .order__info--title {
+    & .order__title {
       color: #626262;
       font-size: 11px;
       line-height: 13px;
@@ -112,7 +112,7 @@
         margin-right: 16px;
       }
 
-      & .field {
+      & .order__field {
         margin-top: 8px;
         display: block;
         border: 1px solid #e0e0e0;
@@ -127,12 +127,12 @@
           color: #1d1d1d;
         }
 
-        &.time__field {
+        &.order__time--field {
           width: 20vw;
           padding: 8px 12px;
         }
 
-        &.address__field {
+        &.order__address--field {
           width: 70vw;
           padding: 8px 0 8px 35px;
           background: url("../images/location.png") no-repeat 11px 12px;

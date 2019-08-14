@@ -46,13 +46,12 @@
         color: $secondary-color;
       }
     }
-
-    &--apps {
-      display: flex;
-      margin-top: 41px;
-      margin-bottom: 39px;
-      justify-content: center;
-    }
+  }
+  &__apps {
+    display: flex;
+    margin-top: 41px;
+    margin-bottom: 39px;
+    justify-content: center;
   }
 
   &__language {
@@ -77,7 +76,7 @@
     }
   }
 
-  &__website {
+  &__websites {
     display: flex;
   }
 
@@ -88,12 +87,12 @@
       color: #fff;
       margin-bottom: 23px;
 
-      &.item_row_2 {
+      &.item_row-start-2 {
         grid-column-start: 2;
         grid-row-start: 2;
       }
 
-      &.item_row_3 {
+      &.item_row-start-3 {
         grid-column-start: 2;
         grid-row-start: 3;
       }
@@ -146,7 +145,7 @@
   }
 }
 
-.website {
+.websites {
   & a {
     display: block;
     width: 24px;
@@ -185,6 +184,7 @@
   right: 16px;
   scroll-behavior: smooth;
   cursor: pointer;
+  transition: 0.5s background ease;
 
   &:hover {
     background: url("../images/arrow.png") no-repeat 50%, green;
