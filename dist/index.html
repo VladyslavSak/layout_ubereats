@@ -1,13 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Uber Eats</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header" id="header">
+      <a href="#">
+        <img src="./images/logo.png" alt="UberEats logo" class="header__logo" />
+      </a>
+
+      <div class="header__navigation">
+        <div class="navigation" id="nav">
+          <input type="text" class="navigation__time" placeholder="ASAP" />
+
+          <span class="navigation__divider">to</span>
+
+          <input
+            type="text"
+            class="navigation__address"
+            placeholder="ul.Tarasivska St, 16"
+          />
+        </div>
+
+        <button class="navigation__sign-in">Sign In</button>
+        <button class="navigation__registration">Register</button>
+
+        <a href="#" class="navigation__basket">
+          <img
+            src="./images/basket.png"
+            alt="Basket"
+            class="navigation__basket--img"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="search">
+        <input
+          type="text"
+          class="search__field"
+          placeholder="Search for restaurant or cuisine"
+        />
+      </div>
+
+      <div class="order__info">
+        <label for="time" class="name time">
+          When
+          <input type="text" name="time" id="time" class="field time__field" placeholder="ASAP">
+        </label>
+
+        <label for="address" class="name address">
+          To
+          <input type="text" class="field address__field"
+          id="address" name="address" placeholder="ul. Bolshaya Dmitrovka,22">
+        </label>
+      </div>
+
+      <h1 class="main__title">Kyiv Restaurants</h1>
+
+      <div class="restaurants">
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo-5.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            Макдоналдс
+          </h2>
+          <span class="card__kitchen">
+            ₴₴ • Бургеры
+          </span>
+          <span class="card__time-cooking">
+            25 - 35 Min
+          </span>
+        </div>
+
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo-1.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            WOKWEI
+          </h2>
+          <span class="card__kitchen">
+            ₴ • Китайська • Азіатська
+          </span>
+          <span class="card__time-cooking">
+            40 - 50 Min
+          </span>
+        </div>
+
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            YIZHA
+          </h2>
+          <span class="card__kitchen">
+            ₴₴ • Американська • Бургери • Вулична їжа
+          </span>
+          <span class="card__time-cooking">
+            35 - 45 Min
+          </span>
+        </div>
+
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo-2.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            Musafir (вул. Саксаганського)
+          </h2>
+          <span class="card__kitchen">
+            ₴₴ • Близькосхідна
+          </span>
+          <span class="card__time-cooking">
+            30 - 40 Min
+          </span>
+        </div>
+
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo-3.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            WOKWEI
+          </h2>
+          <span class="card__kitchen">
+            ₴ • Китайська • Азіатська
+          </span>
+          <span class="card__time-cooking">
+            40 - 50 Min
+          </span>
+        </div>
+
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo-4.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            Milk Bar
+          </h2>
+          <span class="card__kitchen">
+            ₴₴ • Десерти • Європейська
+          </span>
+          <span class="card__time-cooking">
+            25 - 35 Min
+          </span>
+        </div>
+
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo-8.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            Mimosa Brooklyn Pizza
+          </h2>
+          <span class="card__kitchen">
+            ₴₴ • Італійська • Піца • Американська
+          </span>
+          <span class="card__time-cooking">
+            15 - 25 Min
+          </span>
+        </div>
+
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo-6.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            To Be
+          </h2>
+          <span class="card__kitchen">
+            ₴₴ • Японська • Азіатська • Суші
+          </span>
+          <span class="card__time-cooking">
+            25 - 35 Min
+          </span>
+        </div>
+
+        <div class="restaurants__item card">
+          <a href="#" class="card__link">
+            <img src="./images/photo-7.png" alt="restaurant photo" class="card__img">
+          </a>
+
+          <h2 class="card__title">
+            Druzi Cafe (вул. Прорізна)
+          </h2>
+          <span class="card__kitchen">
+            ₴₴ • Американська • Сучасна європейська
+          </span>
+          <span class="card__time-cooking">
+            30 - 40 Min
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <a href="#" class="footer__top--link">
+          <img src="./images/white-logo.png" alt="Logo of UberEats">
+        </a>
+      </div>
+      <div class="footer__body">
+        <div class="footer__language">
+          <select name="Lang" id="lang">
+            <option value="English" selected>
+              English
+            </option>
+            <option value="Ukrainian">
+              Ukrainian
+            </option>
+            <option value="Russian">
+              Russian
+            </option>
+          </select>
+
+          <span class="footer__body__hashtag"><span>#</span>UberEats</span>
+
+          <div class="footer__website website">
+            <a href="#" class="website-fc"></a>
+            <a href="#" class="website-tw"></a>
+            <a href="#" class="website-inst"></a>
+          </div>
+        </div>
+
+        <a href="#" class="footer__menu__item">
+          About UberEats
+        </a>
+        <a href="#" class="footer__menu__item item_row_2">
+          Become a Delivery Partner
+        </a>
+        <a href="#" class="footer__menu__item item_row_3">
+          Become a Restaurant Partner
+        </a>
+        <a href="#" class="footer__menu__item">
+          See all cities
+        </a>
+        <a href="#" class="footer__menu__item">
+          Pricing
+        </a>
+        <a href="#" class="footer__menu__item">
+          Help
+        </a>
+        <a href="#" class="footer__menu__item">
+          FAQs
+        </a>
+      </div>
+
+      <div class="footer__body--apps apps">
+        <a href="#" class="apps__link">
+          <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt="AppleStore Download" class="apps__img">
+        </a>
+        <a href="#" class="apps__link">
+          <img src="./images/en_badge_web_generic-cf6dad406f.png" alt="Play market download" class="apps__img">
+        </a>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__bottom--copyright">©    2019 Uber Technologies Inc.
+        </p>
+
+        <a href="#" class="footer__bottom--privacy license">Privacy</a>
+
+        <a href="#" class="footer__bottom--terms license">Terms</a>
+      </div>
+      <a href="#header" class="button-go-top"></a>
+    </footer>
   </body>
 </html>

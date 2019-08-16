@@ -1,0 +1,174 @@
+@media (max-width: 1023px) {
+  .header,
+  .main,
+  .footer {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .navigation {
+    & input {
+      font-size: 13px;
+
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+
+    &__time {
+      width: 65px;
+    }
+
+    &__address {
+      width: 215px;
+    }
+  }
+
+  .restaurants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__bottom {
+    &--copyright {
+      margin-right: 106px;
+    }
+
+    &--privacy {
+      margin-right: 220px;
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .navigation {
+    margin-right: 40px;
+
+    &__address {
+      width: 170px;
+    }
+  }
+}
+
+@media (max-width: 674px) {
+  .navigation {
+    margin-right: 20px;
+
+    &__address {
+      width: 160px;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .header,
+  .main,
+  .footer {
+    padding-right: 4px;
+  }
+
+  .header__logo {
+    width: 109px;
+  }
+
+  .header__navigation {
+    & button {
+      width: 72px;
+    }
+  }
+
+  .navigation {
+    display: none;
+
+    &__basket {
+      display: none;
+    }
+
+    &__sign-in {
+      margin-right: 12px;
+      margin-left: 46px;
+    }
+
+    &__registration {
+      margin-right: 0;
+    }
+  }
+
+  .search__field {
+    background-position: 7px 15px;
+    background-size: 16px 16px;
+  }
+
+  .order {
+    margin-top: 24px;
+    display: flex;
+    width: 100%;
+
+    & .order__title {
+      color: #626262;
+      font-size: 11px;
+      line-height: 13px;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      & .order__field {
+        margin-top: 8px;
+        display: block;
+        border: 1px solid #e0e0e0;
+        box-sizing: border-box;
+        border-radius: 2px;
+        height: 40px;
+
+        &::placeholder {
+          font-family: "Roboto", sans-serif;
+          font-size: 13px;
+          line-height: 24px;
+          color: #1d1d1d;
+        }
+
+        &.order__time--field {
+          width: 20vw;
+          padding: 8px 12px;
+        }
+
+        &.order__address--field {
+          width: 70vw;
+          padding: 8px 0 8px 35px;
+          background: url("../images/location.png") no-repeat 11px 12px;
+        }
+      }
+    }
+  }
+
+  .restaurants {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__body {
+    display: block;
+    padding-bottom: 12px;
+  }
+
+  .footer__language {
+    margin-bottom: 15px;
+  }
+
+  .footer__social {
+    margin-bottom: 42px;
+  }
+
+  .footer__bottom {
+    display: block;
+
+    & a {
+      display: block;
+      margin-top: 24px;
+    }
+  }
+
+  .button-go-top {
+    width: 64px;
+    height: 64px;
+  }
+}
